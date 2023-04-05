@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>usernamevalidation</title>
+        <script>
+           function myfun ()
+           {
+            var up = /^[a-zA-Z]{3,8}$/.test(a)
+            var pp = /^[7-9)]{1}[0-9]{9}$/.test(b)
+            var a= document.getElementById("user_name").value
+            var a= document.getElementById("user_phone").value
+            if(up==false)
+            {
+document.getElementById("message").innerHTML="invalid "
+            
+            if(pp==false)
+            {
+document.getElementById("message1").innerHTML="invalid error"
+return false
+            }
+            return false
+        }
+        if(pp==false)
+        {
+            document.getElementById("message").innerHTML="invalid "
+            return false
+        }
+           
+           }
+           </script>
+           </head>
+           <body style="background-color: aqua;">
+           <div id="val">
+            <form onsubmit="return myfun ()">
+                username:
+                <input type="text" id="user_name" placeholder="sachin">
+                <span id="message"></span>
+                <br><br>
+               
+                phone number:
+                <input type="text" id="user_phone" placeholder="9686955648">
+                <span id="message1"></span>
+                <br><br>
+                <input type="submit"value="submit"style="fontsize 100px">
+            </form>
+           </div>
+       <style>
+        
+            #val{
+border: 3px solid chocolate;
+background-color: cornsilk;
+font-size: 30px;
+font-family: cursive;
+margin-left: 6%;
+padding-top: 10%;
+            }
+        
+       </style>
+     
+      </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user form</title>
+    </head>
+    <body>
+        <h1>user form</h1>
+        <form>
+           <fieldset>
+            <legend>contact details</legend>
+            <label>Name</label>
+            <input type="text" id="name" name="name"placeholder="enter the name"><br><br>
+            <label>email</label>
+            <input type="text" id="email" name="email"placeholder="enter the email"><br><br>
+            <label>mobile no</label>
+            <input type="text" id="mobile no" name="mobile no"placeholder="enter the mobile no"><br>
+
+           </fieldset>
+           <fieldset>
+
+           <legend>personal details</legend>
+           <label>DOB</label>
+           <input type="date" id="dob" name="dob"><br><br>
+           <label>gender</label>
+           <input type="radio" id="gender" name="gender">
+           <label>male</label>
+           <input type="radio" id="gender" name="gender">
+           <label>female</label>
+           <input type="radio" id="gender" name="gender">
+           <label>transgender</label>
+           <input type="radio" id="gender" name="gender">
+            </fieldset>
+
+            <fieldset>
+                <legend>education details</legend>
+                <label>degree</label>
+                <input list="degrees" id="degree" name="degree">
+                <datalist id="degrees">
+                    <option value="b.e">
+                    <option value="'bsc">
+                    <option value="b.com">
+                      
+                </datalist><br><br>
+                <label>skills</label>
+                <input type="checkbox" >
+                <label>html</label>
+                <input type="checkbox" >
+                <label>css</label>
+                <input type="checkbox" >
+                <label>java</label>
+                <input type="checkbox" >
+            </fieldset><br><br>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
